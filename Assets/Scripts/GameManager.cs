@@ -15,11 +15,15 @@ public class GameManager : MonoBehaviour {
 
 
 	}
-
-	public void BudgetAction(float changeBudgetAmount){
+	// function to change the value of the Budget for a given scenario
+	// change the scenario value in the inspector
+	// script should be located on the button and each button value should correspond with the spreadsheet
+	// make sure to add aditional SetBool functions to the inspector to deactivate current question and activate the appropriate next question
+	public void ScenarioValue(float changeBudgetAmount){
 
 		budgetTotal += changeBudgetAmount;
 		Debug.Log ("Button Clicked");
+
 
 	}
 }

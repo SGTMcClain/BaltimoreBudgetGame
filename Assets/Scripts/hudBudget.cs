@@ -14,7 +14,7 @@ public class hudBudget : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		txt = GUITextObject.GetComponent<Text>();
-		txt.text = "$ " + GameManager.budgetTotal;
+		txt.text = "$ " + GameManager.budgetTotal.ToString("N2");
 
 	}
 }
