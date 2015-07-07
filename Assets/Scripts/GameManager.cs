@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 	public static float budgetTotal = 1000f;
-
+	public static float budgetReset = 1000f;
 	// Use this for initialization
 	void Start () {
 	
@@ -26,4 +26,9 @@ public class GameManager : MonoBehaviour {
 
 
 	}
+
+	public void ResetBudget(){
+		budgetTotal = budgetReset;
+	}
+
 }
